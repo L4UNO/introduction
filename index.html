@@ -1,116 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Lassi</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body {
-                background-color: rgb(0, 0, 0);
-                margin: 0px;
-            }
+        
+        <link rel="stylesheet" href="style.css"></style>
+        
 
-            .grid-container {
-                display: grid;
-                grid-template-columns: auto auto auto;
-                grid-template-rows: auto auto auto;
-            }
-
-            .flex-container {
-                grid-area: 2/2/span 1/span 1;
-            }
-
-            .card {
-                margin-top: 10vh;
-                margin-right: auto;
-                margin-left: auto;
-                max-width: 50vw;
-                display: flex;
-                flex-direction: row;
-                background-color: #080808;
-                color: white;
-                padding: 1em;
-                border-top: 10px solid white;
-                border-bottom: 10px solid white;
-            }
-
-            .card-right {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-            }
-
-            .card-right-bottom {
-                text-overflow: clip;
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                white-space: nowrap;
-            }
-
-            .pic {
-                min-width: none;
-                max-width: 14vw;
-                height: auto;
-            }
-
-            h1 {
-                font-family: 'Raleway', sans-serif;
-                font-weight: 800;
-                font-size: 2.5em;
-                letter-spacing: 0.2em;
-            }
-
-            p {
-                font-family: 'Raleway', sans-serif;
-                font-weight: 400;
-                font-size: 1.3em;
-            }
-            
-            @media screen and  (max-width: 600px) {
-            .card {
-                margin-right: 10vw;
-                margin-left: 10vw;  
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .card-right {
-                justify-content: flex-start;
-            }
-
-            .pic {
-                min-width: none;
-                max-width: 50vw;
-                height: auto;
-            }
-            }
-        </style>
     </head>
     <body>
-        <div class="grid-container">
-            <div class="flex-container">
-                <div class="card">
-                    <div class="card-left">
-                    <img src="img.jpg" class="pic">
-                    </div>
 
-                    <div class="card-right">
-                        <h1>Lassi Perkiö</h1>
-                        <p>Hi! I'm a mechanical and production engineer interested in information technology, programming and cyber security.</p>
+        <div class="card">
+            <div class="card-left">
+            <img src="img.jpg" class="pic">
+            </div>
 
-                        <div class="right-bottom">    
-                            <a href="https://www.linkedin.com/in/lassipe/" target="_blank"><img src="lin.png" style="height: 32px;"></a>
-                            <a href="https://github.com/L4UNO" target="_blank"><img src="github.png"></a>
-                            <a href="https://www.twitter.com/lassipe" target="_blank"><img src="twitter.svg" style="width: 32px; margin-left: 4px;"></a>
-                        </div>
-                    </div>
+            <div class="card-right">
+                <h1>Lassi Perkiö</h1>
+                <p>Hi! I'm a mechanical and production engineer interested in information technology, programming and cyber security.</p>
+                
+                <div class="right-bottom">    
+                    <a href="https://www.linkedin.com/in/lassipe/" target="_blank"><img src="lin.png" style="height: 32px;"></a>
+                    <a href="https://github.com/L4UNO" target="_blank"><img src="github.png"></a>
+                    <a href="https://www.twitter.com/lassipe" target="_blank"><img src="twitter.svg" style="width: 32px; margin-left: 4px;"></a>
                 </div>
             </div>
+        </div>    <!-- Card loppuu -->
+
+        <div class="bottom-container">
+            <div class="text">
+                <p><strong>Studies</strong></p>
+                <p>Right now i'm studying <a href="https://www.seamk.fi/osaamistaan-taydentavalle/taydennyskoulutus/ohjelmistosuunnittelu-27-op-2021/">Software Development</a> at Seinäjoki University of Applied Sciences.</p>
+                <p>On January 2022 I'll continue to <a href="https://www.seamk.fi/hakijalle/avoin-amk/osaamiskokonaisuudet/web-ohjelmointi-26-46-op/">Web Development</a> study module.</p>
+            </div>
+
+            <div class="skills">
+                <p><strong>Skills and techniques</strong></p>
+
+                <p>HTML</p>
+                <div class="bar-base">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
+
+                <p>CSS</p>
+                <div class="bar-base">
+                    <div class="bar" style="width: 65%;"></div>
+                </div>
+
+                <p>Javascript</p>
+                <div class="bar-base">
+                    <div class="bar" style="width: 30%;"></div>
+                </div>
+
+                <p>Python</p>
+                <div class="bar-base">
+                    <div class="bar" style="width: 65%;"></div>
+                </div>
+
+                <p>C#</p>
+                <div class="bar-base">
+                    <div class="bar" style="width: 25%;"></div>
+                </div>
+
+                <p>SQL (SQLite)</p>
+                <div class="bar-base" style="margin-bottom: 1em;">
+                    <div class="bar" style="width: 20%;"></div>
+                </div>
+
+
+
+            </div>            
         </div>
+
     </body>
 </html>
